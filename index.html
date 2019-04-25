@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>mapping</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=Enter your APikey&callback=initMap"></script>
+    <script src="app.js"></script>
+    <script type="text/javascript"></script>
+
+</head>
+<h3>Google autocomplete Maps</h3>
+
+<form>
+    <div class="form-group input-group">
+        <input type="text" id="search_location" class="form-control" placeholder="Search location" style="width: 250px;">
+        <div class="input-group-btn">
+            <button class="btn btn-default get_map" type="submit">
+                Locate
+            </button>
+        </div>
+    </div>
+    </form>
+    <div id="geomap" style="float: right; height: 500px; width: 850px; margin: 12px;"></div>
+    <h4>Location Details</h4>
+    <p>Address: <input type="text" class="search_addr" size="45"></p>
+    <p>Latitude: <input type="text" class="search_latitude" size="30"></p>
+    <p>Longitude: <input type="text" class="search_longitude" size="30"></p>
+</div>
+</body>
+</html>
